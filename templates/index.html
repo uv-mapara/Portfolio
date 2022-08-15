@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">      
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <figure class="brand">
+            <span>U</span>
+            <span>V</span>
+            <span>E</span>
+            <span>S</span>
+            <span>H</span>
+        </figure>              
+        <nav class="menu">    
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon"><i onclick="myFunction(this)" class="fa fa-bars"></i></label>    
+            <ul>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Service</a>            
+            </ul>        
+        </nav>
+    </header> 
+
+    <div class="container mypage">
+        <div class="row pt-5 pb-5 justify-content-center">
+            <div class="col-md-6 col-xs-12 Intro">
+                <button class="BtnHello text-center"> Hello I'm</button>
+                <h1 class="mt-3">Uvesh Shaikh</h1>
+                <h3 class="mt-3">Web Developer</h3>                
+                <label class="mt-4"><i class="fa fa-envelope mr-3"></i>maparauvesh@gmail.com</label><br>                 
+                <label class="mt-2"><i class="fa fa-phone mr-3"></i>+919054056443</label><br>                   
+                <label class="mt-2"><i class="fa fa-map-marker mr-3"></i>Ganjh Shahid Quarters,Danilimda</label> 
+                <div class="col-md-12 mt-2">
+                    <button class="facebook"><i class="fa fa-facebook p-3"></i></button>
+                    <button class="instagram"><i class="fa fa-instagram p-3"></i></button>
+                    <button class="whatsapp"><i class="fa fa-whatsapp p-3"></i></button>                    
+                </div>                  
+            </div>
+
+            <div class="col-md-6 col-xs-12 mt-md-5">
+                <img src="{% static 'images/uv.jpg' %}" class="img-fluid my-img">
+            </div>
+
+        </div>        
+    </div>   
+    
+    <div class="container mt-5 About">
+        <div class="row pt-5">
+            <div class="col-md-6 col-xs-12">
+                <div class="cartoon">
+                    <img src="{% static 'images/cartoon.png' %}" class="img-fluid cartoon-img" />
+                </div>
+            </div>
+            <div class="col-md-6 col-xs-12 p-3">
+                <h3>About Me</h3>
+                <p class="mt-3">Hello, I’m a Patrick, web-developer based on Paris. I have rich experience in web site design & building and customization. Also I am good at</p>
+                <ul>
+                    <li><span>HTML</span></li>
+                    <li><span>CSS</span></li>
+                    <li><span>BOOTSTRAP</span></li>
+                    <li><span>JAVASCRIPT</span></li>
+                    <li><span>JQUERY</span></li>
+                    <li><span>REACT</span></li>
+                    <li><span>PYTHON</span></li>
+                    <li><span>DJANGO</span></li>
+                    <li><span>MONGO-DB</span></li>
+                </ul>
+                <button class="CV mt-3"><i class="fa fa-download mr-3"></i>Download CV</button>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 mb-5 mt-5">
+                <h1 class="text-center">What I do</h1>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="ui">
+                    <i class="fa fa-bullseye"></i>
+                    <h2 class="mt-3">UI Design</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="code">
+                    <i class="fa fa-code"></i>
+                    <h2 class="mt-3">Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+            </div>
+            <div class="col-md-4 col-xs-12">
+                <div class="ui">
+                    <i class="fa fa-object-ungroup"></i>
+                    <h2 class="mt-3">App Development</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                </div>
+            </div>
+        </div>
+    </div> 
+    
+    <div class="container mt-5 Skills">
+        <div class="row">        
+            <div class="col-md-12 col-xs-12">
+                <h1 class="text-center mb-5">Technical Skills</h1>
+                <div class="progress pink ">
+                    <h3 class="progress-title">HTML5</h3>
+                    <div class="progress-value">90%</div>
+                    <div class="progress-bar" style="width:90%; background:linear-gradient(to right,#f791bd,#ff4a98);"></div>
+                </div>
+                <div class="progress blue">
+                    <h3 class="progress-title">CSS3</h3>
+                    <div class="progress-value">50%</div>
+                    <div class="progress-bar" style="width: 50%;  background:linear-gradient(to right,#baf883,#7CF210);"></div>
+                </div>
+                <div class="progress green">
+                    <h3 class="progress-title">JQUERY</h3>
+                    <div class="progress-value">60%</div>
+                    <div class="progress-bar" style="width: 60%;  background:linear-gradient(to right,#eed590,#f2a310);"></div>
+                </div>                
+            </div>            
+        </div>
+    </div>
+
+    <div class="container mt-5 mb-5 contact">
+        <div class="row">
+           <div class="col-md-12">
+                <h1 class="text-center">Contact</h1>             
+           </div>
+           <div class="col-md-12">
+            <div class="DivDisplayMsg" style="display: none;">
+                <button class="close" data-close="alert"></button>
+                <span class="SpnNotifyHeader"></span>
+                <span class="SpnNotifyErrorMsg"></span>
+            </div>           
+           </div>
+           <div class="col-md-6 col-xs-12 mt-4">
+                <div class="row" id="Post">
+                    {% csrf_token %}
+                        <div class="col">
+                        <input type="text" class="form-control firstname InputForm" id="firstname" name="firstname" placeholder="First name">
+                        </div>
+                        <div class="col">
+                        <input type="text" class="form-control lastname InputForm" id="lastname" name="lastname" placeholder="Last name">
+                        </div>
+                        <div class="col-md-12 mt-3">
+                        <input type="email" class="form-control email InputForm" id="email" name="email" placeholder="Your Email">
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <textarea class="form-control" class="message" id="message" name="message" col="10" placeholder="Your Message" required="" style="height:265px;resize:none;"></textarea>
+                        </div>
+                        <div class="col-md-12 mt-3">
+                            <button type="submit" class="btn submit">Send Message</button>
+                        </div>                
+                </div>                
+           </div>
+           <div class="col-md-6 col-xs-12 mt-4 embed-responsive embed-responsive-1by1">
+            <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.6782577399945!2d72.57526649240464!3d22.998855875061846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8594eb42cd97%3A0xb0a0628790385c00!2sUvesh%20Mapara!5e0!3m2!1sen!2sin!4v1660547939877!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+           </div>
+        </div>
+    </div>
+
+    <div class="container  mt-5 footer">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">All Right Reserverd Uvesh Shaikh @2022</p> 
+            </div>            
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>    
+           <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.blockUI/2.70/jquery.blockUI.min.js"></script>   
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script> 
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>                  
+    <script src="{% static 'js/index.js' %}"></script>
+</body>
+</html>
